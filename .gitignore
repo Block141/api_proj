@@ -1,0 +1,29 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Environments
+.env
+
+# Editor/IDE
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+
+# Database
+db.sqlite3
+*.sqlite3
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+
+# Dependency directories
+venv/
+node_modules/
