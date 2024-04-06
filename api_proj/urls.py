@@ -15,8 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from carbon_app.views import get_estimate_form
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', get_estimate_form, name='home'),  # Set the home view to the form view
+    path('estimate/', include('carbon_app.urls')),
 ]

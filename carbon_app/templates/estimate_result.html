@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emissions Estimate Result</title>
+</head>
+<body>
+    <h1>Carbon Emissions Estimate Result</h1>
+    <div>
+        <p><strong>Distance:</strong> {{ estimate_data.data.attributes.distance_value }} miles</p>
+        <p><strong>Vehicle Make:</strong> {{ estimate_data.data.attributes.vehicle_make }}</p>
+        <p><strong>Vehicle Model:</strong> {{ estimate_data.data.attributes.vehicle_model }}</p>
+        <p><strong>Vehicle Year:</strong> {{ estimate_data.data.attributes.vehicle_year }}</p>
+        <p><strong>Estimated Carbon Emissions:</strong></p>
+        <ul>
+            <li><strong>Grams:</strong> {{ estimate_data.data.attributes.carbon_g }}</li>
+            <li><strong>Pounds:</strong> {{ estimate_data.data.attributes.carbon_lb }}</li>
+            <li><strong>Kilograms:</strong> {{ estimate_data.data.attributes.carbon_kg }}</li>
+            <li><strong>Metric Tons:</strong> {{ estimate_data.data.attributes.carbon_mt }}</li>
+        </ul>
+    </div>
+</body>
+</html>
